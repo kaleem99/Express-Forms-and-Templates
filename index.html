@@ -9,41 +9,63 @@
     
     .divForm{
     width: 30%;
-    height: 400px;
+    height: 450px;
     background-color: grey;
     margin: auto;
     text-align: center;
-    padding-top: 5%;
+    padding-top:2%;
     border: 2px solid black
+}
+input[type=text], select {
+  width: 50%;
+  padding: 12px 10px;
+  margin: 1px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 150px;
+  background-color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 2px solid black;
+  border-radius: 18px;
+  cursor: pointer;
 }
 
     </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1>Please Enter Your Details Below</h1>
     <div class="divForm">
-        <form action="/new_visitor" id="form1" method="POST">
-            <label for="FirstName">First name:</label><br>
-            <input type="text" id="Fullname" name="FullName" value=""><br>
+        <form action="/" id="form1" method="POST">
+            <label for="VisitorName">Full name:</label><br>
+            <input type="text" id="VisitorName" name="VisitorName" value="" required><br>
 
             <label for="AssistentName">AssistedBy:</label><br>
-            <input type="text" id="Fullname" name="AssistentName" value=""><br>
+            <input type="text" id="AssistentName" name="AssistentName" value="" required><br>
 
             <label for="VisitorAge">Visitors Age:</label><br>
-            <input type="text" id="VisitorAge" name="VisitorAge" value=""><br>
+            <input type="text" id="VisitorAge" name="VisitorAge" value="" required><br>
 
             <label for="DateOfVisit">Date Of Visit:</label><br>
-            <input type="text" id="DateOfVisit" name="DateOfVisit" value=""><br>
+            <input type="text" id="DateOfVisit" name="DateOfVisit" value="" required><br>
 
             <label for="TimeOfVisit">Time Of Visit:</label><br>
-            <input type="text" id="TimeOfVisit" name="TimeOfVisit" value=""><br>
+            <input type="text" id="TimeOfVisit" name="TimeOfVisit" value="" required><br>
 
             <label for="Comments">Comments:</label><br>
-            <input type="text" id="Comments" name="Comments" value=""><br><br>
+            <input type="text" id="Comments" name="Comments" value="" required><br><br>
 
             <input type="submit" value="Submit">
           </form>
           
     </div>
+    <br><br>
+    <h2 id="data">
+        
+    </h2>
 </body>
 </html>
